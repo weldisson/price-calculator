@@ -74,8 +74,8 @@
       e.preventDefault()
       const resultsContainer = document.querySelector('#results-container')
   
-      // Dynamic import for the calculate.js module
-      // so that the code is lazy-loaded when the submit button is clicked
+      // Dynamic import para importar o módulo calculate.js
+      // para que o código seja carregado lentamente quando o botão enviar é clicado
       import('./calculate.js')
         .then(module => {
           const selectedProductSku = Number(document.querySelector('#product').value)

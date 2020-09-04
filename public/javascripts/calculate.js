@@ -14,6 +14,5 @@ export const calculateUnitPrice = (productName, weightAndPrice) => {
   const unitPriceInDollars = unitPriceInCents / 100
   const unitPriceFormatted = unitPriceInDollars.toFixed(2)
 
-//   return `The unit price for ${weight} ${unit} of ${productName.toLowerCase()}s for $${price} is <b>$${unitPriceFormatted} per ${unit}</b>`
   return `O preço unitário de ${weight} ${unit} de ${productName.toLowerCase()}s por $${price} é <b>$${unitPriceFormatted} por ${unit}</b>`
 }
