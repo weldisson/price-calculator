@@ -1,0 +1,50 @@
+.btn-primary {
+  background: #2f3a8c;
+  border-color: #2f3a8c;
+}
+
+.btn-submit {
+  margin-bottom: 1em;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background: #5a62bf;
+}
+
+.jumbotron {
+  background: #2f3a8c;
+  color: white;
+  padding-bottom: 80px;
+}
+
+.jumbotron .btn-primary {
+  background: #5a8bc7;
+  border-color: #5a8bc7;
+}
+
+.jumbotron .btn-primary:hover,
+.jumbotron .btn-primary:focus {
+  background: #467dc1;
+}
+
+.jumbotron p {
+  color: #d9ccee;
+  max-width: 75%;
+  margin: 1em auto 2em;
+}
+
+.jumbotron .lang-logo {
+  display: block;
+  background: #B01302;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 2px solid white;
+}
+
+.jumbotron .lang-logo img {
+  max-width: 100%;
+}

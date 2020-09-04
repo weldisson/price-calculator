@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="icon" href="/images/lang-logo.png" sizes="16x16" type="image/png">
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <div class="container">
+        <img src="/images/lang-logo.png">
+        <h1><%= title %></h1>
+        <p>Calcule o preço de um tipo de produto</p>
+        <a class="btn btn-lg btn-primary" href="https://github.com/WELDISSON/price-calculator"><span class="glyphicon glyphicon-download"></span> Código no GitHub</a>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="row">
+          <form id="unit-price-calculator-form">
+            <div class="form-group">
+              <label for="product">Produto</label>
+              <select class="form-control" id="product">
+                <option disabled selected value="">Selecione Um produto</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="unit">Unidade de medida</label>
+              <select class="form-control" id="unit">
+                <option value="kg" id="kg">Quilogramas (kg)</option>
+                <option value="lbs" id="lbs">Libras (lbs)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="weight-and-price">Peso e preço</label>
+              <select class="form-control" id="weight-and-price">
+                <option disabled selected value="">Por favor selecione após selecionar um produto e unidade de medida</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-submit btn-primary">Calcular o preço unitário</button>
+          </form>
+        </div>
+        <div class="row">
+          <div id="results-container"></div>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="/javascripts/main.js"></script>
+  </body>
+</html>
